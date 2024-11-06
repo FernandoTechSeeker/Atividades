@@ -4,9 +4,10 @@ public class ExemploLancamentoExcecao{
 
     public static void main(String[] args) {
         try {
-            
-        } catch (Exception e) {
-            
+            realizarDivisao(10, 2);
+            realizarDivisao(7, 0);
+        } catch (ArithmeticException e) {
+            System.out.println("Erro ao realizar a divisão: "+e.getMessage());
         }
     }
 
